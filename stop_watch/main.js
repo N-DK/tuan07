@@ -3,6 +3,7 @@ let s = 0,
     m = 0,
     h = 0;
 let timeout;
+var check = true; //kiem tra tranh spam nhieu lan start
 
 function updateTime() {
     s++;
@@ -22,13 +23,17 @@ function updateTime() {
 }
 
 function start() {
-    timeout = setInterval(() => {
-        updateTime()
-    }, 1000)
+    if (check == true) {
+        timeout = setInterval(() => {
+            updateTime()
+        }, 100)
+    }
+    check = false;
 }
 
 function stop() {
     clearInterval(timeout);
+    check = true;
 }
 
 function reset() {
@@ -41,4 +46,5 @@ function reset() {
     var second = s < 10 ? "0" + s : s;
     var time = hour + ":" + minute + ":" + second;
     content.innerHTML = time;
+    check = true;
 }
