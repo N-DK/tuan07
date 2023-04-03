@@ -26,7 +26,7 @@ function start() {
     if (check == true) {
         timeout = setInterval(() => {
             updateTime()
-        }, 100)
+        }, 1000)
     }
     check = false;
 }

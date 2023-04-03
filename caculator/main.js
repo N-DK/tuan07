@@ -14,7 +14,9 @@ for (const btn of btns) {
             result = "";
         }
         if (btn.value == "=") {
-            console.log(result[0]);
+            for (const value of result) {
+
+            }
         }
     })
 }
