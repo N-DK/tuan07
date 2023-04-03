@@ -13,30 +13,55 @@
 
 .caculator__container {
     border: 1px solid #000;
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     border-radius: 4px;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.calulator__buttons {
+    margin-top: 10px;
+    background-color: rgb(245, 212, 170);
+    border-radius: 4px;
+    padding: 20px;
 }
 
 .caculator__screen {
-    border: 1px solid #000;
     border-radius: 4px;
-    height: 60px;
+    height: 100px;
     position: relative;
     margin-bottom: 10px;
     overflow: hidden;
+    width: 100%;
+    font-size: 39px;
+    background-color: rgb(168, 149, 126);
+    color: #fff;
 }
 
-.caculator__screen span {
+.caculator__screen .content {
     position: absolute;
     left: 10px;
     top: 5px;
-    font-size: 24px;
+    font-size: 32px;
     display: inline-block;
 }
 
 .calulator__buttons button {
-    width: 60px;
-    height: 60px;
+    width:  70px;
+    height: 45px;
     margin: 4px 2px;
     font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 1px rgb(199, 189, 174);
+}
+
+.result {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    font-size: 32px;
+    display: inline-block; 
 }

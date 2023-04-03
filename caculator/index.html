@@ -36,10 +36,14 @@
                     <button class="js_btn" value="*">x</button>
                 </div>
                 <div class="row__buttons">
-                    <button class="js_btn" value="ac">ac</button>
+                    <button onclick="del()" class="js_btn" value="del">del</button>
                     <button class="js_btn" value="0">0</button>
-                    <button class="js_btn" value="=">=</button>
+                    <button class="js_btn" value=".">.</button>
                     <button class="js_btn" value="/">/</button>
+                </div>
+                <div class="row__buttons" style="display: flex; justify-content: space-around;">
+                    <button style="flex: 50%;" onclick="reset()" class="js_btn" value="ac">ac</button>
+                    <button style="flex: 50%; margin-left: 6px;" onclick="equal()" class="js_btn" value="=">=</button>
                 </div>
             </div>
         </div>
